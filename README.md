@@ -57,9 +57,9 @@ I have tried to understand the working of iptables first to go tackle the ufw-do
 15. To check which ports are exposed to the world, use:``` ss -ltpn ```(ss is socket stats )
 16. One of the solutions I have found to solve the ufw docker issue is to map the port to localhost only as in -p 127.0.0.1:80:80 by default it exposes to all the ports on the internet.
 17. I tried but failed to test it as I am in a local environment.
-
+**Note:** I learnt about it from [YouTube](https://www.youtube.com/watch?v=6Ra17Qpj68c).
 # I also went through ufw and tries to solve the problem as per [chai feng](https://github.com/chaifeng/ufw-docker)
----
+
 - I did everything that was mentioned in the repo but as I was doing it on virtual box I cannot tell the effectiveness.
 - I also did a lot of testing myself if I could use the iptables to work with docker but failed.
 - I tried ufw and tried to get to the problem statement, replicated the scenario but as I didnot had public ip access, I couldnot try.
